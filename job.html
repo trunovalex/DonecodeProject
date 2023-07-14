@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@200;300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600&family=Play:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/examples.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+    <script type="text/javascript" src="js/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
+    <title>Работа в Donecode</title>
+</head>
+<body>
+    <div class="section__job">
+        <div class="container">
+            <div class="job__menu">
+                <img src="/img/logo.png" alt="" class="logo__job">
+                <a href="index.html" class="job__a">На главную</a>
+            </div>
+            <h3 class="job__h3"><span class="color__h3">&rsaquo;</span> Открытые вакансии</h3>
+            <div class="job__grid">
+                <div class="job__grid_item">
+                    <h4 class="job__h4">Веб-дизайнер</h4>
+                    <p class="job__p">Веб-дизайнер создаёт дизайн сайтов и приложений, но иногда под этим понимают сразу несколько задач: UI- и UX-дизайн, брендинг, дизайн лендингов.</p>
+                </div>
+                <div class="job__grid_item">
+                    <h4 class="job__h4">Frontend-разработчик</h4>
+                    <p class="job__p">FrontEnd разработчик создает видимую для пользователя часть веб-страницы и его главная задача – точно передать в верстке то, что создал дизайнер, а также реализовать пользовательскую логику.</p>
+                </div>
+                <div class="job__grid_item">
+                    <h4 class="job__h4">SMM-специалист</h4>
+                    <p class="job__p">СММ специалист является маркетологом, “заточенным” под работу в социальных медиа. Основное направление деятельности SMM менеджера - это создание и обслуживание аккаунтов компании или бренда в популярных соцсетях.</p>
+                </div>
+            </div>
+            <!-- <form action="from_job.php" id="" class="job__form">
+                <div class="form__job_grid">
+                    <div class="form__input_job">
+                        <label for="name" class="label_job">Вакансия</label>
+                        <select class="select__job">
+                            <option>Веб-дизайнер</option>
+                            <option>Frontend-разработчик</option>
+                            <option>SMM-специалист</option>
+                          </select>
+                    </div>
+                    <div class="form__input_job">
+                        <label for="name" class="label_job">Имя</label>
+                        <input class="contact__item_job" type="text" placeholder="Имя Фамилия">
+                    </div>
+                    <div class="form__input_job">
+                        <label for="phone" class="label_job">Номер телефона</label>
+                        <input class="contact__item_job" type="phone" placeholder="+7">
+                    </div>
+                    <div class="form__input_job">
+                        <label for="mail" class="label_job">Telegram / Почта</label>
+                        <input class="contact__item_job" type="email" placeholder="Telegram или Email">
+                    </div>
+                </div>
+                <div class="form__input_job_file">
+                    <label for="files" class="label_job">Ваше резюме</label>
+                    <input id="files" type="file" name="f">
+                </div>
+                <input type="submit" class="contact__button_job" value="Откликнуться">
+            </form> -->
+
+            <form action="from_job.php" method="POST" enctype="multipart/form-data" class="job__form">
+                <div class="form__job_grid">
+                    <div class="form__input_job">
+                        <label for="vacancy" class="label_job">Вакансия</label>
+                        <select id="vacancy" name="vacancy" class="select__job">
+                            <option>Веб-дизайнер</option>
+                            <option>Frontend-разработчик</option>
+                            <option>SMM-специалист</option>
+                        </select>
+                    </div>
+                    <div class="form__input_job">
+                        <label for="name" class="label_job">Имя</label>
+                        <input id="name" name="name" class="contact__item_job" type="text" placeholder="Имя Фамилия" required>
+                    </div>
+                    <div class="form__input_job">
+                        <label for="phone" class="label_job">Номер телефона</label>
+                        <input id="phone" name="phone" class="contact__item_job" type="tel" placeholder="+7" required>
+                    </div>
+                    <div class="form__input_job">
+                        <label for="contact" class="label_job">Telegram / Почта</label>
+                        <input id="contact" name="contact" class="contact__item_job" type="text" placeholder="Telegram или Email" required>
+                    </div>
+                </div>
+                <div class="form__input_job_file">
+                    <label for="resume" class="label_job">Ваше резюме</label>
+                    <input id="resume" name="f" type="file">
+                </div>
+                <input type="submit" class="contact__button_job" value="Откликнуться">
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>

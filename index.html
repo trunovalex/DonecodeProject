@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Donecode - Ваш надежный партнер для разработки сайта, мобильного приложения и настройки рекламы.">
+    <meta name="keywords" content="разработка сайтов, создание сайтов, создание веб-сайтов, веб-разработка, мобильные приложения, разработка мобильных приложений, настройка рекламы, цифровой маркетинг, SEO, оптимизация сайта, дизайн сайтов, интернет-магазины, рекламные кампании, социальные медиа, аналитика, консалтинг, заказать сайт, одностраничный сайт, landing page, сайт визитка">
+    <meta name="author" content="Donecode">
+    <meta name="robots" content="index, follow">
+	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@200;300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600&family=Play:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/examples.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+
+    <script type="text/javascript" src="js/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/maska-nomera.js"></script>
+    <script src="telegram-chat/axios.min.js"></script>
+    <script src="telegram-chat/telega-chat.js"></script>
+
+
+
+
+    <title>Donecode — IT-разработка и реклама</title>
+</head>
+<body>
+
+<div class="preloader"></div>    
+
+    <header class="header">
+        <div class="container">
+            <div class="menu__inner">
+              <div class="logo noselect">
+                <a href ="#page1"><img class="logo_img" src="img/logo.png" class="logo" alt="Logo"></a>
+            </div>
+            
+            <!-- Бургер меню -->
+            <ul id="slide-out" class="sidenav noselect">
+                <li><a href="#page1"><i class="material-icons">home</i>Главная</a></li>
+                <li><a href="#page2"><i class="material-icons">library_add</i>Решения</a></li>
+                <li><a href="#page3"><i class="material-icons">token</i>Основы</a></li>
+                <li><a href="#page4"><i class="material-icons">grade</i>Факты</a></li>
+                <li><a href="#page5"><i class="material-icons">dataset</i>Отрасли</a></li>
+                <li><a href="#page6"><i class="material-icons">group</i>Клиенты</a></li>
+                <li><a href="#page7"><i class="material-icons">move_up</i>Технологии</a></li>
+                <li><a href="#page8"><i class="material-icons">sell</i>Прайс</a></li>
+                <li class="start__project_mobile"><a href="#page9"><i class="material-icons">fact_check</i>Рассчитать проект</a></li>
+                <li><div class="divider"></div></li>
+                <li><a href="#" class="sidenav-close"><i class="material-icons">close</i>Закрыть</a></li>
+                <li><div class="footer__mobile">
+                    <div class="footer__mobile_menu">
+                        <a href="job.html" class="footer_a_Job_mobile">Вакансии</a>
+                        <div class="icons__mobile">
+                            <a href="https://t.me/donecode" target="_blank" class="footer__soc_mob"><i class="fa fa-telegram fa-lg" aria-hidden="true"></i></a>
+                            <a href="https://wa.me/79888598140" target="_blank" class="footer__soc_mob"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/donecode.ru/" target="_blank" class="footer__soc_mob"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <a href="source/Политика конфиденциальности Donecode.pdf" class="footer_a_mobile" target="_blank">Политика конфиденциальности</a>
+                    <a href="" class="footer_a_mobile">Ставрополь, ул. Серова, 134</a>
+                    <a href="tel:+79888598140" class="footer_a_mobile">+7 (988) 859-81-40</a>
+                    <a href="" class="footer_a_mobile">inbox@donecode.ru</a>
+                </div></li>
+              </ul>
+        
+              <!-- <div class="start_project_burger">
+                <a href ="#page8">
+                    <span>Начать проект</span><div class="liquid"></div>
+                </a>
+              </div> -->
+
+              <section class="menu__mobile">
+                    <div class="menu__inn">
+                      <div class="burger__none">
+                            <a class="burger sidenav-trigger" data-target="slide-out">
+                                <span class="burger__line"></span>
+                                <span class="burger__line"></span>
+                                <span class="burger__line"></span>
+                            </a>
+                        </div>
+                    </div>
+            </section>
+
+
+            <!-- Бургер меню - конец -->
+
+                <ul class="nav noselect" id="menu">
+                    <li data-menuanchor="page2"><a href ="#page2">Решения</a></li>
+                    <li data-menuanchor="page3"><a href ="#page3">Основы</a></li>
+                    <li data-menuanchor="page4"><a href ="#page4">Факты</a></li>
+                    <li data-menuanchor="page5"><a href ="#page5">Отрасли</a></li>
+                    <li data-menuanchor="page6"><a href ="#page6">Клиенты</a></li>
+                    <li data-menuanchor="page7"><a href ="#page7">Технологии</a></li>
+                    <li data-menuanchor="page8"><a href ="#page8">Прайс</a></li>
+                    <li class="start_project" data-menuanchor="page9"><a href ="#page9">
+                        <span>Рассчитать проект</span><div class="liquid"></div>
+                    </a></li>
+                    <li>
+                        <!-- Онлайн-чат -->
+                         <div class="chat__trigger">
+                            <img class="chat__trigger__img" src="/img/chat/chat.svg" alt="">
+                         </div>
+                    </li>
+                </ul>
+
+          </div>
+
+        </div>
+
+    </header>
+
+    <!-- СЕКЦИЯ 1 Страница Главная -->
+    <div id="pagepiling">
+        <div class="section" id="page1">
+            <div class="container">
+                <div class="section__1">
+                    <div class="section__1_left">
+                        <h2 class="section__1_h2 noselect">Сайты, мобильные приложения и реклама</h2>
+                        <dvi class="section__1_a"><a href="#page2"><i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a></dvi>
+                    </div>
+                    <div class="section__1_right">
+                        <img class="section__1_img noselect nodrag" src="img/code.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- СЕКЦИЯ 2 Решения -->
+        <div class="section" id="page2">
+            <div class="container">
+                <h3 class="section_2_h3 noselect"><span class="color__h3">&rsaquo;</span> Решения</h3>
+                <div class="section__2">
+                    <div class="section__2_left">
+                        <!-- <div class="h3__border"></div> -->
+                        <div class="section__2_left_grid noselect">
+                            <div class="section__2_grid_items " id="img/s2-web.png">
+                                <h4 class="section__2_grid_h4">Веб-разработка</h4>
+                                <p class="section__2_grid_p">Интернет-магазины</p>
+                                <p class="section__2_grid_p">Информационные сайты</p>
+                                <p class="section__2_grid_p">Образовательные ресурсы</p>
+                                <p class="section__2_grid_p">Портфолио и блоги</p>  
+                                <p class="section__2_grid_p">Госсектор</p>
+                            </div>
+                            <div class="section__2_grid_items" id="img/s2-3.png">
+                                <h4 class="section__2_grid_h4">Мобильная разработка</h4>
+                                <p class="section__2_grid_p">Развлечение и мультимедиа</p>
+                                <p class="section__2_grid_p">Фитнес и здоровье</p>
+                                <p class="section__2_grid_p">Образование и финансы</p>
+                                <p class="section__2_grid_p">Путешествия</p>
+                                <p class="section__2_grid_p">Здравоохранение</p>
+                            </div>
+                            <div class="section__2_grid_items" id="img/s2-4.png">
+                                <h4 class="section__2_grid_h4">Маркетинг</h4>
+                                <p class="section__2_grid_p">Исследование рынка</p>
+                                <p class="section__2_grid_p">Разработка продукта</p>
+                                <p class="section__2_grid_p">Продвижение продукта</p>
+                                <p class="section__2_grid_p">Анализ и измерение</p>
+                                <p class="section__2_grid_p">Инновации и адаптация</p>
+                            </div>
+                            <div class="section__2_grid_items" id="img/s2-2.png">
+                                <h4 class="section__2_grid_h4">Реклама</h4>
+                                <p class="section__2_grid_p">Поисковая реклама</p>
+                                <p class="section__2_grid_p">Реклама в социальных сетях</p>
+                                <p class="section__2_grid_p">Доски объявлений</p>
+                                <p class="section__2_grid_p">Геометки</p>
+                                <p class="section__2_grid_p">Партнерские программы</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__2_right">
+                        <img class="section__2_img" src="img/s2-web.png" alt="">
+                    </div>
+                </div>
+                <!-- Секция 2 mobile -->
+                <div class="section__2_mobile">
+                    <div class="section__2_mobile_up">
+                        <div class="section__2_mobile_item_active" id="sec__2_web">
+                            <h4 class="section__2_grid_h4">Веб-разработка</h4>
+                            <p class="section__2_grid_p">Интернет-магазины</p>
+                            <p class="section__2_grid_p">Информационные сайты</p>
+                            <p class="section__2_grid_p">Образовательные ресурсы</p>
+                            <p class="section__2_grid_p">Портфолио и блоги</p>  
+                            <p class="section__2_grid_p">Госсектор</p>
+                        </div>
+                        <div class="section__2_mobile_item" id="sec__2_mob">
+                            <h4 class="section__2_grid_h4">Мобильная разработка</h4>
+                            <p class="section__2_grid_p">Развлечение и мультимедиа</p>
+                            <p class="section__2_grid_p">Фитнес и здоровье</p>
+                            <p class="section__2_grid_p">Образование и финансы</p>
+                            <p class="section__2_grid_p">Путешествия</p>
+                            <p class="section__2_grid_p">Здравоохранение</p>
+                        </div>
+                        <div class="section__2_mobile_item" id="sec__2_mar">
+                            <h4 class="section__2_grid_h4">Маркетинг</h4>
+                            <p class="section__2_grid_p">Исследование рынка</p>
+                            <p class="section__2_grid_p">Разработка продукта</p>
+                            <p class="section__2_grid_p">Продвижение продукта</p>
+                            <p class="section__2_grid_p">Анализ и измерение</p>
+                            <p class="section__2_grid_p">Инновации и адаптация</p>
+                        </div>
+                        <div class="section__2_mobile_item" id="sec__2_ads">
+                            <h4 class="section__2_grid_h4">Реклама</h4>
+                            <p class="section__2_grid_p">Поисковая реклама</p>
+                            <p class="section__2_grid_p">Реклама в социальных сетях</p>
+                            <p class="section__2_grid_p">Доски объявлений</p>
+                            <p class="section__2_grid_p">Геометки</p>
+                            <p class="section__2_grid_p">Партнерские программы</p>
+                        </div>
+                    </div>
+                    <div class="section__2_mobile_down">
+                        <div class="section__2_mobile_grid">
+                            <div class="section__2_mobile_grid_item" id="sec__2_web">
+                                <img class="sec__2_mob_img" src="img/s2-web.png" alt="" >
+                            </div>
+                            <div class="section__2_mobile_grid_item" id="sec__2_mob">
+                                <img class="sec__2_mob_img" src="img/s2-3.png" alt="" >
+                            </div>
+                            <div class="section__2_mobile_grid_item" id="sec__2_ads">
+                                <img class="sec__2_mob_img" src="img/s2-2.png" alt="" >
+                            </div>
+                            <div class="section__2_mobile_grid_item" id="sec__2_mar">
+                                <img class="sec__2_mob_img" src="img/s2-4.png" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Секция 2 mobile КОНЕЦ-->
+            </div>
+        </div>
+
+        <!-- СЕКЦИЯ 3 Основы -->
+        <div class="section" id="page3">
+           <div class="container">
+            <div class="section__3">
+                <div class="section__3_left">
+                    <img class="section__3_img" src="img/baza.png" alt="" >
+                    <!-- Шар 2.0 -->
+                    <div class="move-wrap">
+                        <div id="follower">
+                          <div class="view">
+                            <div class="plane main">
+                              <div class="circle"></div>
+                              <div class="circle"></div>
+                              <div class="circle"></div>
+                              <div class="circle"></div>
+                              <div class="circle"></div>
+                              <div class="circle"></div>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                    <!-- /Шар 2.0 -->
+                </div>
+                <div class="section__3_right noselect">
+                    <h3 class="section_3_h3"><span class="color__h3">&rsaquo;</span> Основы</h3>
+                    <!-- <div class="h3__border"></div> -->
+                    <!-- Аккордеон -->
+                    <ul class="accordion-menu">
+                        <li class="open">
+                          <div class="dropdownlink"><p class="accord_p">&bull;</p> Профессиональная команда
+                          </div>
+                          <ul class="submenuItems" style="display: block">
+                            <li>Основа компании Donecode построена на слаженной работе высококвалифицированных разработчиков, дизайнеров и специалистов по интернет-маркетингу, что обеспечивает высокое качество работы и реализацию самых современных технологий.</li>
+                          </ul>
+                        </li>
+                        <li>
+                            <div class="dropdownlink"><p class="accord_p">&bull;</p> Индивидуальный подход
+                            </div>
+                            <ul class="submenuItems">
+                              <li>Donecode предлагает индивидуальный и тщательно продуманный подход к каждому проекту. Наши специалисты способны адаптировать разработку под уникальные потребности и бизнес-цели каждого клиента.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <div class="dropdownlink"><p class="accord_p">&bull;</p> Технологические инновации
+                            </div>
+                            <ul class="submenuItems">
+                              <li>Мы следим за последними тенденциями и инновациями в веб-разработке, поэтому внедряем новейшие технологии и инструменты, чтобы создавать современные и эффективные продукты.</li>
+                            </ul>
+                          </li>
+                          <li>
+                              <div class="dropdownlink"><p class="accord_p">&bull;</p> Долгосрочное сотрудничество
+                              </div>
+                              <ul class="submenuItems">
+                                <li>Donecode гарантирует высокое качество своих услуг, а также надежность и стабильность работы веб-проектов. Каждый цифровой продукт проходит этап тестирования, отладку и поддержку после запуска.</li>
+                              </ul>
+                            </li>
+                            <li>
+                                <div class="dropdownlink"><p class="accord_p">&bull;</p> Время - деньги
+                                </div>
+                                <ul class="submenuItems">
+                                  <li>Ключевой принцип нашей работы - строгое соблюдение сроков и бюджета проектов. Оптимальное планирование, эффективное управление проектами и система контроля качества - залог высоких стандартов компании Donecode.</li>
+                                </ul>
+                              </li>
+                              <li>
+                                  <div class="dropdownlink"><p class="accord_p">&bull;</p> Целостность и безопасность
+                                  </div>
+                                  <ul class="submenuItems">
+                                    <li>Мы уделяем особое внимание целостности и безопасности проектов. Для этого мы внедряем защиту от вредоносных атак, шифрование данных, регулярное обновление систем и прочие современные меры для обеспечения безопасности.</li>
+                                  </ul>
+                                </li>
+                      </ul>
+                    <!-- /Аккордеон -->
+                </div>
+            </div>
+           </div>
+        </div>
+
+        <!-- СЕКЦИЯ 4 Факты -->
+        <div class="section" id="page4">
+            <div class="container">
+                <div class="section__4">
+                    <div class="section__4_left  noselect">
+                        <h3 class="section__4_h3"><span class="color__h3">&rsaquo;</span> Факты</h3>
+                        <!-- <div class="h3__border"></div> -->
+                        <div class="section__4_grid">
+                            <div class="section__4_grid_items">
+                                <h4 class="section__4_h4">24/7</h4>
+                                <p class="section__4_p">поддержка</p>
+                            </div>
+                            <div class="section__4_grid_items">
+                                <h4 class="section__4_h4">8+ лет</h4>
+                                <p class="section__4_p">опыта с 2015 года</p>
+                            </div>
+                            <div class="section__4_grid_items">
+                                <h4 class="section__4_h4">100+</h4>
+                                <p class="section__4_p">реализованных проектов</p>
+                            </div>
+                            <div class="section__4_grid_items">
+                                <h4 class="section__4_h4">15+</h4>
+                                <p class="section__4_p">сотрудников в штате</p>
+                            </div>
+                            <div class="section__4_grid_items">
+                                <h4 class="section__4_h4">4 года</h4>
+                                <p class="section__4_p">средний срок сотрудничества</p>
+                            </div>
+                            <div class="section__4_grid_items">
+                                <h4 class="section__4_h4">100+</h4>
+                                <p class="section__4_p">рекламных кампаний</p>
+                            </div>
+                            <div class="section__4_grid_items">
+                                <h4 class="section__4_h4">3+</h4>
+                                <p class="section__4_p">сотрудника<br> на проект</p>
+                            </div>
+                            <div class="section__4_grid_items">
+                                <h4 class="section__4_h4">№1</h4>
+                                <p class="section__4_p">в отношении <br>к Клиентам</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__4_right">
+                        <img src="img/facts.png" alt="" class="section__4_img noselect nodrag">
+                        <!-- Анимация ракеты -->
+                            <!-- <ul class="rotation">
+                              <li class="rotation__item item--1"></li>
+                              <li class="rotation__item item--2"></li>
+                              <li class="rotation__item item--3"></li>
+                              <li class="rotation__item item--4"></li>
+                            </ul> -->
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- СЕКЦИЯ 5 Отрасли -->
+        <div class="section" id="page5">
+            <div class="container">
+                <div class="section__5">
+                    <div class="section__5_left noselect">
+                        <div class="section__5_left_item_active" id="sec_shop">
+                            <img class="section__5_img nodrag" src="img/core/shop_white.png" alt="">
+                            <ul class="section__5_ul">
+                                <li>B2B​ и ​B2C интернет-магазины</li>
+                                <li>Системы управления заказами</li>
+                                <li>Управление каталогом товаров</li>
+                                <li>Программы лояльности</li>
+                                <li>Анализ и настройка воронки продаж</li>
+                                <li>Системы повторных продаж</li>
+                            </ul>
+                        </div>
+                        <div class="section__5_left_item" id="sec_strah">
+                            <img class="section__5_img nodrag" src="img/core/strah_white.png" alt="">
+                            <ul class="section__5_ul">
+                                <li>Онлайн-продажи</li>
+                                <li>Расчеты страховых продуктов</li>
+                                <li>Системы самообслуживания для клиентов</li>
+                                <li>Системы дополнительных и перекрестных продаж</li>
+                                <li>Программы лояльности</li>
+                                <li>Соответствие законодательным требованиям</li>
+                            </ul>
+                        </div>
+                        <div class="section__5_left_item" id="sec_bank">
+                            <img class="section__5_img nodrag" src="img/core/bank_white.png" alt="">
+                            <ul class="section__5_ul">
+                                <li>Онлайн-банкинг</li>
+                                <li>Личные кабинеты для клиентов</li>
+                                <li>Системы дополнительных и перекрестных продаж</li>
+                                <li>Программы лояльности</li>
+                                <li>Соответствие законодательным требованиям</li>
+                            </ul>
+                        </div>
+                        <div class="section__5_left_item" id="sec_mac">
+                            <img class="section__5_img nodrag" src="img/core/calk_white.png" alt="">
+                            <ul class="section__5_ul">
+                                <li>Промо-сайты и посадочные страницы</li>
+                                <li>Системы онлайн-продаж</li>
+                                <li>CRM-решения</li>
+                                <li>Программы лояльности</li>
+                                <li>Анализ и настройка воронки продаж</li>
+                                <li>Системы повторных продаж</li>
+                            </ul>
+                        </div>
+                        <div class="section__5_left_item" id="sec_pharm">
+                            <img class="section__5_img nodrag" src="img/core/pharm_white.png" alt="">
+                            <ul class="section__5_ul">
+                                <li>Промо-сайты и посадочные страницы</li>
+                                <li>Системы онлайн-продаж</li>
+                                <li>CRM-решения</li>
+                                <li>Программы лояльности</li>
+                                <li>Анализ и настройка воронки продаж</li>
+                                <li>Системы повторных продаж</li>
+                            </ul>
+                        </div>
+                        <div class="section__5_left_item" id="sec_telek">
+                            <img class="section__5_img nodrag" src="img/core/telek_white.png" alt="">
+                            <ul class="section__5_ul">
+                                <li>Системы онлайн-продаж</li>
+                                <li>Системы самообслуживания для клиентов</li>
+                                <li>Клиентские информационные системы</li>
+                                <li>Информационные решения для контакт-центров</li>
+                            </ul>
+                        </div>
+                        <div class="section__5_left_item" id="sec_start">
+                            <img class="section__5_img nodrag" src="img/core/start_white.png" alt="">
+                            <ul class="section__5_ul">
+                                <li>Системы онлайн-продаж</li>
+                                <li>Электронные торговые площадки</li>
+                                <li>Цифровое преобразование бизнеса</li>
+                                <li>Программы лояльности</li>
+                                <li>Анализ и настройка воронки продаж</li>
+                                <li>Системы повторных продаж</li>
+                            </ul>
+                        </div>
+                        <div class="section__5_left_item" id="sec_smi">
+                            <img class="section__5_img nodrag" src="img/core/horeca_white.png" alt="">
+                            <ul class="section__5_ul">
+                                <li>Промо-сайты и посадочные страницы</li>
+                                <li>Системы онлайн-продаж</li>
+                                <li>CRM-решения</li>
+                                <li>Программы лояльности</li>
+                                <li>Анализ и настройка воронки продаж</li>
+                                <li>Системы повторных продаж</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section__5_right noselect">
+                        <h3 class="section__5_h3"><span class="color__h3">&rsaquo;</span> Отрасли</h3>
+                        <!-- <div class="h3__border_white"></div> -->
+                        <div class="section__5_grid">
+                            <div class="section__5_grid_item" id="sec_shop">
+                                <img class="section__5_icon nodrag" src="img/core/shop_blue.png" alt="">
+                                <h5 class="section__5_h5">Товары</h5>
+                            </div>
+                            <div class="section__5_grid_item" id="sec_pharm">
+                                <img class="section__5_icon nodrag" src="img/core/pharm_blue.png" alt="">
+                                <h5 class="section__5_h5">Услуги</h5>
+                            </div>
+                            <div class="section__5_grid_item" id="sec_strah">
+                                <img class="section__5_icon nodrag" src="img/core/strah_blue.png" alt="">
+                                <h5 class="section__5_h5">Страхование</h5>
+                            </div>
+                            <div class="section__5_grid_item" id="sec_bank">
+                                <img class="section__5_icon nodrag" src="img/core/bank_blue.png" alt="">
+                                <h5 class="section__5_h5">Банки</h5>
+                            </div>
+                            <div class="section__5_grid_item" id="sec_mac">
+                                <img class="section__5_icon nodrag" src="img/core/calk_blue.png" alt="">
+                                <h5 class="section__5_h5">Образование</h5>
+                            </div>
+                            <div class="section__5_grid_item" id="sec_telek">
+                                <img class="section__5_icon nodrag" src="img/core/telek_blue.png" alt="">
+                                <h5 class="section__5_h5">Телеком</h5>
+                            </div>
+                            <div class="section__5_grid_item" id="sec_start">
+                                <img class="section__5_icon nodrag" src="img/core/start_blue.png" alt="">
+                                <h5 class="section__5_h5">Стартапы</h5>
+                            </div>
+                            <div class="section__5_grid_item" id="sec_smi">
+                                <img class="section__5_icon nodrag" src="img/core/horeca_blue.png" alt="">
+                                <h5 class="section__5_h5">HoReCa</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- СЕКЦИЯ 6 Клиенты -->
+        <div class="section" id="page6">
+            <div class="container">
+                <div class="section__6 noselect">
+                    <h3 class="section__6_h3"><span class="color__h3">&rsaquo;</span> Клиенты</h3>
+                    <!-- <div class="h3__border_white_clients"></div> -->
+                    <div class="section__6_grid">
+                        <img class="section__6_img nodrag" src="img/clients/agira.png" alt="">
+                        <img class="section__6_img nodrag" src="img/clients/neodym.png" alt="">
+                        <img class="section__6_img nodrag" src="img/clients/arirang.png" alt="">
+                        <img class="section__6_img nodrag" src="img/clients/corea.png" alt="">
+                        <img class="section__6_img nodrag" src="img/clients/blackgrain.png" alt="">
+                        <img class="section__6_img nodrag" src="img/clients/first.png" alt="">
+                        <img class="section__6_img nodrag" src="img/clients/gretastr.png" alt="">
+                        <img class="section__6_img nodrag" src="img/clients/zhukoff.png" alt="">
+                        <img class="section__6_img nodrag" src="img/clients/sferarea.png" alt="">
+                        <img class="section__6_img nodrag" src="img/clients/autodopoff.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- СЕКЦИЯ 7 Технологии -->
+        <div class="section noselect" id="page7">
+
+            <div class="container">
+
+                <div id="tabs" class="tabs-container">
+                    <h3 class="section__7_h3"><span class="color__h3">&rsaquo;</span> Технологии</h3>
+                    <!-- <div class="h3__border"></div> -->
+            
+                  <div class="content">
+            
+                    <div id="tabcontent1" data-tab="1" class="tabcontent">
+                      <ul class="section__7_ul">
+                        <li>Python</li>
+                        <li>PHP</li>
+                        <li>Symfony</li>
+                        <li>1С-Битрикс</li>
+                      </ul>
+                    </div>
+                    <div id="tabcontent2" data-tab="2" class="tabcontent active">
+                      <ul class="section__7_ul">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>Vue</li>
+                        <li>AngularJS</li>
+                      </ul>
+                    </div>
+                    <div id="tabcontent3" data-tab="3" class="tabcontent">
+                      <ul class="section__7_ul">
+                        <li>Swift</li>
+                        <li>Kotlin</li>
+                        <li>Coroutines</li>
+                        <li>Combine</li>
+                        <li>SwiftUI</li>
+                      </ul>
+                    </div>
+                    <div id="tabcontent4" data-tab="4" class="tabcontent">
+                      <ul class="section__7_ul">
+                        <li>Waterfall</li>
+                        <li>Agile</li>
+                        <li>Scrum</li>
+                        <li>Kanban</li>
+                      </ul>
+                    </div>
+                    <div id="tabcontent5" data-tab="5" class="tabcontent">
+                      <ul class="section__7_ul">
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>Redis</li>
+                        <li>Memcached</li>
+                        <li>Clickhouse</li>
+                        <li>Tarantool</li>
+                      </ul>
+                    </div>
+                    <div id="tabcontent7" data-tab="7" class="tabcontent">
+                      <ul class="section__7_ul">
+                        <li>Яндекс.Директ</li>
+                        <li>Google Ads</li>
+                      </ul>
+                    </div>
+                    <div id="tabcontent8" data-tab="8" class="tabcontent">
+                      <ul class="section__7_ul">
+                        <li>Microsofr Dynamics AX</li>
+                        <li>SAP</li>
+                        <li>Sugar CRM</li>
+                        <li>Microsoft Dynamics CRM</li>
+                        <li>Emarsys</li>
+                        <li>Manzana</li>
+                        <li>1C</li>
+                      </ul>
+                    </div>
+                    <div id="tabcontent9" data-tab="9" class="tabcontent">
+                      <ul class="section__7_ul">
+                        <li>ООП</li>
+                        <li>GRASP</li>
+                        <li>SOLID</li>
+                        <li>DRY</li>
+                        <li>KISS</li>
+                        <li>PHPUnit</li>
+                      </ul>
+                    </div>
+                    <div id="tabcontent10" data-tab="10" class="tabcontent">
+                      <ul class="section__7_ul">
+                        <li>Customer Journey Mapping</li>
+                        <li>Sketch</li>
+                        <li>Axure</li>
+                      </ul>
+                    </div>
+                    <div id="tabcontent11" data-tab="11" class="tabcontent">
+                      <ul class="section__7_ul">
+                        <li>VK Реклама</li>
+                        <li>Facebook Ads</li>
+                        <li>Twitter Ads</li>
+                        <li>LinkedIn Ads</li>
+                      </ul>
+                    </div>
+                    <div id="tabcontent12" data-tab="12" class="tabcontent">
+                      <ul class="section__7_ul">
+                        <li>Яндекс.Метрика</li>
+                        <li>Google Search Console</li>
+                        <li>Google Analytics</li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+                  <div class="tabs">
+                    <a id="tab2" data-tab="2" class="tab active">Веб-разработка</a>
+                    <a id="tab3" data-tab="3" class="tab">Мобильная разработка</a>
+                    <a id="tab1" data-tab="1" class="tab">Разработка серверных систем</a>
+                    <a id="tab4" data-tab="4" class="tab">Управление проектами</a>
+                    <a id="tab5" data-tab="5" class="tab">Разработка баз данных</a>
+                    <a id="tab10" data-tab="10" class="tab">Проектирование</a>
+                    <a id="tab8" data-tab="8" class="tab">Интеграция</a>
+                    <a id="tab9" data-tab="9" class="tab">Управление кодом</a>
+                    <a id="tab7" data-tab="7" class="tab">Контекстная реклама</a>
+                    <a id="tab11" data-tab="11" class="tab">Таргетированная реклама</a>
+                    <a id="tab12" data-tab="12" class="tab">SEO</a>
+                  </div>
+            
+                </div>
+            
+              </div>
+
+        </div>
+
+        <!-- Прайс-Лист -->
+
+        <div class="section noselect" id="page8">
+
+            <div class="container">
+
+               <div class="section__price">
+                <h3 class="section__price_h3"><span class="color__h3">&rsaquo;</span> Прайс-лист</h3>
+                <div class="section__price_flex">
+                    <div class="section__price_left">
+                        <ul class="accordion-menu_price">
+                            <li class="open_price">
+                              <div class="dropdownlink_price">
+                                    <h4 class="price__h4">Веб-разработка</h4>
+                            </div>
+                              <ul class="submenuItems_price" style="display: block">
+                                <li>Сайт-визитка<span class="price__span"> от <span class="price__hmch">15 000</span> руб.</span></li>
+                                <li>Корпоративный сайт<span class="price__span"> от <span class="price__hmch">25 000</span> руб.</span></li>
+                                <li>Landing Page<span class="price__span"> от <span class="price__hmch">20 000</span> руб.</span></li>
+                                <li>Интернет-магазин<span class="price__span"> от <span class="price__hmch">30 000</span> руб.</span></li>  
+                              </ul>
+                            </li>
+                            <li>
+                            <div class="dropdownlink_price">
+                                    <h4 class="price__h4">Мобильная разработка</h4>
+                            </div>
+                            <ul class="submenuItems_price">
+                                <li>Android-приложение<span class="price__span"> от <span class="price__hmch">30 000</span> руб.</span></li>
+                                <li>iOS-приложение<span class="price__span"> от <span class="price__hmch">30 000</span> руб.</span></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <div class="dropdownlink_price">
+                                    <h4 class="price__h4">Реклама</h4>
+                                </div>
+                                <ul class="submenuItems_price">
+                                    <li>Яндекс.Директ<span class="price__span"> от <span class="price__hmch">10 000</span> руб.</span></li>
+                                    <li>Google Ads<span class="price__span"> от <span class="price__hmch">10 000</span> руб.</span></li>
+                                    <li>Avito<span class="price__span"> от <span class="price__hmch">10 000</span> руб.</span></li>
+                                    <li>MyTarget<span class="price__span"> от <span class="price__hmch">10 000</span> руб.</span></li>
+                                    <li>Социальные сети<span class="price__span"> от <span class="price__hmch">10 000</span> руб.</span></li>  
+                                </ul>
+                              </li>
+                              <li>
+                                  <div class="dropdownlink_price">
+                                    <h4 class="price__h4">Маркетинг</h4>
+                                  </div>
+                                  <ul class="submenuItems_price">
+                                    <li>Исследование рынка<span class="price__span"> от <span class="price__hmch">140 000</span> руб.</span></li>
+                                    <li>Разработка продукта<span class="price__span"> от <span class="price__hmch">190 000</span> руб.</span></li>
+                                    <li>Продвижение продукта<span class="price__span"> от <span class="price__hmch">160 000</span> руб.</span></li>
+                                    <li>Инновации и адаптация<span class="price__span"> от <span class="price__hmch">150 000</span> руб.</span></li> 
+                                  </ul>
+                                </li>
+                          </ul>
+                    </div>
+                    <div class="section__price_right">
+                        <img class="price__img nodrag" src="img/price.png" alt="">
+                        <a href="#page9" class="price__btn">Рассчитать проект</a>
+                    </div>
+                </div>
+               </div>
+            
+              </div>
+
+        </div>
+
+        <!-- СЕКЦИЯ 9 Начать проект  -->
+
+        <div class="section noselect" id="page9">
+            <div class="container">
+                <div class="section__8">
+                    <div class="section__8_flex">
+                        
+                        <form action="form.php" method="POST" class="section__8_left" enctype="multipart/form-data" id="contactForm">
+                            <h3 class="section__8_h3">Выберите тип<br> вашего проекта</h3>
+                            <h3 class="section__8_h3_2">Ваши контакты</h3>
+                            <!-- шаг 1 -->
+                            <div class="section__8_items_flex_direct" id="s8_direct">
+                                <label class="section__8_item z__type" id="s8_web">
+                                    <input class="form__input_radio" type="radio" name="type_project" value="Веб-сайт" checked>
+                                    <img class="section__8_item_img" src="img/sec8/s8_web.svg" alt="">
+                                    <p class="section__8_item_p">Веб-сайт</p>
+                                </label>
+                                <label class="section__8_item z__type" id="s8_mobile">
+                                    <input class="form__input_radio" type="radio" name="type_project" value="Приложение">
+                                    <img class="section__8_item_img" src="img/sec8/s8_mobile.svg" alt="">
+                                    <p class="section__8_item_p">Приложение</p>
+                                </label>
+                                <label class="section__8_item z__type" id="s8_marketing">
+                                    <input class="form__input_radio" type="radio" name="type_project" value="Маркетинг">
+                                    <img class="section__8_item_img" src="img/sec8/s8_marketing.svg" alt="">
+                                    <p class="section__8_item_p">Маркетинг</p>
+                                </label>
+                                <label class="section__8_item z__type" id="s8_ads">
+                                    <input class="form__input_radio" type="radio" name="type_project" value="Реклама">
+                                    <img class="section__8_item_img" src="img/sec8/s8_ads.svg" alt="">
+                                    <p class="section__8_item_p">Реклама</p>
+                                </label>
+                                <label class="section__8_item z__type" id="s8_oth">
+                                    <input class="form__input_radio" type="radio" name="type_project" value="Другое">
+                                    <img class="section__8_item_img" src="img/sec8/s8_oth.svg" alt="">
+                                    <p class="section__8_item_p">Другое</p>
+                                </label>
+                            </div>
+                            <!-- шаг 2 -->
+                            <div class="section__8_items_flex_state" id="s8_state">
+                                <label class="section__8_item z__status" id="s8_newproj">
+                                    <input class="form__input_radio" type="radio" name="status_project" value="Новый проект" checked>
+                                    <img class="section__8_item_img" src="img/sec8/s8_newproj.svg" alt="">
+                                    <p class="section__8_item_p">Новый проект</p>
+                                </label>
+                                <label class="section__8_item z__status" id="s8_oldproj">
+                                    <input class="form__input_radio" type="radio" name="status_project" value="Существующий проект">
+                                    <img class="section__8_item_img" src="img/sec8/s8_oldproj.svg" alt="">
+                                    <p class="section__8_item_p">Существующий проект</p>
+                                </label>
+                            </div>
+                            <!-- шаг 3 -->
+                            <div class="section__8_items_flex_terms" id="s8_terms">
+                                <label class="section__8_item z__start" id="s8_fast">
+                                    <input class="form__input_radio" type="radio" name="start_project" value="Немедленно" checked>
+                                    <img class="section__8_item_img" src="img/sec8/s8_fast.svg" alt="">
+                                    <p class="section__8_item_p">Немедленно</p>
+                                </label>
+                                <label class="section__8_item z__start" id="s8_week">
+                                    <input class="form__input_radio" type="radio" name="start_project" value="В течение недели">
+                                    <img class="section__8_item_img" src="img/sec8/s8_week.svg" alt="">
+                                    <p class="section__8_item_p">В течение недели</p>
+                                </label>
+                                <label class="section__8_item z__start" id="s8_month">
+                                    <input class="form__input_radio" type="radio" name="start_project" value="В течение месяца">
+                                    <img class="section__8_item_img" src="img/sec8/s8_month.svg" alt="">
+                                    <p class="section__8_item_p">В течение месяца</p>
+                                </label>
+                            </div>
+                            <!-- шаг 4 - форма -->
+                            <div id="sec__8_form" class="section__8_form">
+                                <div class="form__input">
+                                    <label for="name" class="label">Имя</label>
+                                    <input class="contact__item" type="text" id="name" name="name" placeholder="Имя Фамилия">
+                                </div>
+                                <div class="form__input">
+                                    <label for="phone" class="label">Номер телефона</label>
+                                    <input class="contact__item art-stranger" type="tel" id="phone" name="phone" placeholder="+7">
+                                </div>
+                                <div class="form__input">
+                                    <label for="email" class="label">Telegram / Почта</label>
+                                    <input class="contact__item" type="text" id="email" name="email" placeholder="Telegram или Email">
+                                </div>
+                                <div class="form__textarea">
+                                    <label for="message" class="label">Сообщение</label>
+                                    <textarea id="message" name="message" class="contact__textarea" placeholder="Сроки запуска, бюджет, требования, ваши пожелания..."></textarea>
+                                </div>
+                                <input type="submit" id="submitButton" class="contact__button" value="Рассчитать проект">
+                            </div>
+                        </form>
+                        
+
+                        <!-- Модальное окно -->
+
+                        <div id="successModal" class="modal">
+                            <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Отлично! Данные успешно отправлены.<br>Мы ознакомимся с информацией и свяжемся с Вами.</p>
+                            </div>
+                        </div>
+
+                        <!-- прогресс заявки -->
+                        <div id="sec__8_right" class="section__8_right">
+                            <h4 class="section__8_h4">Ваш проект</h4>
+                            <div class="section__8_right_flex">
+                                <div id="sec__type" class="section__8_right_item">
+                                    <p id="sec__8_type" class="section__8_right_p">Тип</p>
+                                </div>
+                                <div id="sec__sost" class="section__8_right_item">
+                                    <p id="sec__8_sost" class="section__8_right_p">Состояние</p>
+                                </div>
+                                <div id="sec__start" class="section__8_right_item">
+                                    <p id="sec__8_start" class="section__8_right_p">Старт</p>
+                                </div>
+                                <div class="section__8_right_item">
+                                    <p id="sec__8_cont" class="section__8_right_p">Ваши контакты</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer noselect">
+                    <div class="footer__1">
+                        <a href="job.html" class="footer_a_Jobs">Вакансии</a>
+                        <a href="source/Политика конфиденциальности Donecode.pdf" class="footer_a" target="_blank">Политика конфиденциальности</a>
+                        <a href="" class="footer_a">ул. Серова, 134, г. Ставрополь, 365007</a>
+                        <a href="" class="footer_a footer_mail">inbox@donecode.ru</a>
+                        <a href="tel:+79888598140" class="footer_a">+7 (988) 859-81-40</a>
+                        
+                        <div class="footer__social">
+                            <a href="https://t.me/donecode" target="_blank" class="footer__soc_href"><i class="fa fa-telegram fa-lg" aria-hidden="true"></i></a>
+                            <a href="https://wa.me/79888598140" target="_blank" class="footer__soc_href"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/donecode.ru/" target="_blank" class="footer__soc_href"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <p class="footer_p">© 2015-2023 Donecode</p>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+
+
+    <script type="text/javascript">
+        //Прелоадер
+        $(window).on('load', function(){$('.preloader').fadeOut('slow');});
+
+        //Настройка темы
+        $(document).ready(function() {
+        	$('#pagepiling').pagepiling({
+                sectionsColor: ['#FFFFFF', '#f2f2f2', '#FFFFFF', '#f2f2f2', '#111111', '#63A1F2', '#FFFFFF', '#f2f2f2', '#A62F03'],
+                scrollingSpeed: 500,
+                verticalCentered: false,
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'],
+                menu: menu,
+                touchSensitivity: 5,
+                navigation: false,
+                afterLoad: function(anchorLink, index){
+                    //using index
+                    if(index == 5){
+                        $("ul.nav").addClass("nav_white");
+                        $('.logo_img').attr('src', "img/logo-white.png");
+                        $('.chat__trigger__img').attr('src', "img/chat/chat2.svg");
+                        $('.burger__line').css({'background-color':'#ffffff'});
+                    } else if(index == 6){
+                        $("ul.nav").addClass("nav_white");
+                        $('.logo_img').attr('src', "img/logo-white.png");
+                        $('.chat__trigger__img').attr('src', "img/chat/chat2.svg");
+                        $('.burger__line').css({'background-color':'#ffffff'});
+                    } else if(index == 9){
+                        $("ul.nav").addClass("nav_white");
+                        $('.logo_img').attr('src', "img/logo-white.png");
+                        $('.chat__trigger__img').attr('src', "img/chat/chat2.svg");
+                        $('.burger__line').css({'background-color':'#ffffff'});
+                    } else {
+                        $("ul.nav").removeClass("nav_white");
+                        $('.logo_img').attr('src', "img/logo.png");
+                        $('.chat__trigger__img').attr('src', "img/chat/chat.svg");
+                        $('.burger__line').css({'background-color':'#111111'});
+                    }
+		        }
+        });
+});
+
+//mobile menu 
+
+document.addEventListener('DOMContentLoaded', function() {
+    var sidenav = document.querySelectorAll('.sidenav');
+    var instances_sidenav = M.Sidenav.init(sidenav);
+  });
+
+//section 2 - img mix
+        $(document).ready(function () {
+            $('.section__2_grid_items').mouseover(function(e) {
+                if($('.section__2_right img').attr('src')!==$(this).attr('id')) {
+                    $('.section__2_right img').hide().attr('src', $(this).attr('id')).fadeOut(300).fadeIn(300);
+                }
+                e.preventDefault();
+            })
+        });
+
+//section 2 - mobile
+
+$(document).ready(function () {
+            $('.section__2_mobile_grid_item').mouseover(function(e) {
+                var gridId = $(this).attr('id');
+                if($('.section__2_mobile_item_active').attr('id')!==gridId) {
+                    $('.section__2_mobile_item_active').removeClass('section__2_mobile_item_active').addClass('section__2_mobile_item');
+                    $('.section__2_mobile_item').each(function(){
+                    if($(this).attr('id')==gridId) {
+                        $(this).removeClass('section__2_mobile_item').addClass('section__2_mobile_item_active');
+                    }
+                });
+                }
+                e.preventDefault();
+            });
+        });
+
+//section 3 - accordeon
+
+    $(function() {
+            var Accordion = function(el, multiple) {
+                this.el = el || {};
+                // more then one submenu open?
+                this.multiple = multiple || false;
+                
+                var dropdownlink = this.el.find('.dropdownlink');
+                dropdownlink.on('click',
+                                { el: this.el, multiple: this.multiple },
+                                this.dropdown);
+            };
+            
+            Accordion.prototype.dropdown = function(e) {
+                var $el = e.data.el,
+                    $this = $(this),
+                    //this is the ul.submenuItems
+                    $next = $this.next();
+                
+                $next.slideToggle();
+                $this.parent().toggleClass('open');
+                
+                if(!e.data.multiple) {
+                //show only one menu at the same time
+                $el.find('.submenuItems').not($next).slideUp().parent().removeClass('open');
+                }
+            }
+            
+            var accordion = new Accordion($('.accordion-menu'), false);
+            })
+
+        $(function() {
+        var Accordion = function(el, multiple) {
+            this.el = el || {};
+            // more then one submenu open?
+            this.multiple = multiple || false;
+            
+            var dropdownlink = this.el.find('.dropdownlink_price');
+            dropdownlink.on('click',
+                            { el: this.el, multiple: this.multiple },
+                            this.dropdown);
+        };
+        
+        Accordion.prototype.dropdown = function(e) {
+            var $el = e.data.el,
+                $this = $(this),
+                //this is the ul.submenuItems
+                $next = $this.next();
+            
+            $next.slideToggle();
+            $this.parent().toggleClass('open_price');
+            
+            if(!e.data.multiple) {
+            //show only one menu at the same time
+            $el.find('.submenuItems_price').not($next).slideUp().parent().removeClass('open_price');
+            }
+        }
+        
+        var accordion = new Accordion($('.accordion-menu_price'), false);
+        })
+
+// section 3 Шар
+
+        $(function(){
+            var mouseX = 0, mouseY = 0, limitX = 50-0, limitY = 300-0; 
+        // Определяет границы, по которым будет двигаться объект
+            $(window).mousemove(function(e){
+                var offset = $('.move-wrap').offset();
+                mouseX = Math.min(e.pageX - offset.left, limitX);
+                mouseY = Math.min(e.pageY - offset.top, limitY);
+        // Ищет координаты курсора
+                if (mouseX < 0) mouseX = 0;
+        // С какого момента (координат) начинать движение за курсором
+                if (mouseY < 0) mouseY = 100;
+        // Если курсор находится вне веб-страницы на момент загрузки, то установит объект в координатах x=0, y=0.
+            
+        });
+        
+            var follower = $("#follower");
+            var xp = 0, yp = 200; // Начальные координаты объекта на момент загрузки страницы
+            var loop = setInterval(function(){
+        // Далее определяется скорость, с которой будет двигаться объект.
+        // Изменить значение 20, для изменения скорости. Чем больше это значение, тем медленнее движется объект.
+                
+                    xp += (mouseX - xp) / 100;
+                yp += (mouseY - yp) / 100;
+                follower.css({left:xp, top:yp});
+        // Изменение позиционирования объекта с помощью css
+                
+            }, 10);
+        //В данном случае это значение определяет, насколько плавно и быстро будет происходить движение
+        });
+
+    // Section 5 - mix items
+        $(document).ready(function () {
+            $('.section__5_grid_item').mouseover(function(e) {
+                var gridId = $(this).attr('id');
+                if($('.section__5_left_item_active').attr('id')!==gridId) {
+                    $('.section__5_left_item_active').removeClass('section__5_left_item_active').addClass('section__5_left_item');
+                    $('.section__5_left_item').each(function(){
+                    if($(this).attr('id')==gridId) {
+                        $(this).removeClass('section__5_left_item').addClass('section__5_left_item_active');
+                    }
+                });
+                }
+                e.preventDefault();
+            });
+        });
+
+        // Section 7 - ТЕХНОЛОГИИ
+                const tabs = document.querySelectorAll('.tab')
+        const tabContents = document.querySelectorAll('.tabcontent')
+        
+        const activateTab = tabnum => {
+            
+            tabs.forEach( tab => {
+            tab.classList.remove('active')
+            })
+            
+            tabContents.forEach( tabContent => {
+                tabContent.classList.remove('active')
+            })
+        
+            document.querySelector('#tab' + tabnum).classList.add('active')
+            document.querySelector('#tabcontent' + tabnum).classList.add('active')
+            localStorage.setItem('jstabs-opentab', JSON.stringify(tabnum))
+        
+        }
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                activateTab(tab.dataset.tab)
+            })
+        })
+
+        // Section 8 - НАЧАТЬ ПРОЕКТ
+
+$(function() {
+    $('.section__8_items_flex_direct label').click(function() {
+        if ($(this).attr('id') == "s8_oth") {
+            $("#sec__8_form").css({ 'opacity': 1 });
+            $("#sec__8_type").hide(300);
+            $("#sec__8_sost").hide(300);
+            $("#sec__8_start").hide(300);
+            $("#sec__8_cont").hide(300);
+            $('.section__8_h4').html('Другое')
+            $('.section__8_h3').hide(300);
+            $('.section__8_h3_2').css({ 'opacity': 1 })
+            $("#s8_direct").hide(300);
+            $("#s8_state").hide(300);
+            $("#s8_terms").hide(300);
+        } else {
+            $("#s8_state").css({ 'opacity': 1 });
+            $('.section__8_h3').html('В каком состоянии Ваш проект сейчас?').fadeIn(300);
+            $("#s8_direct").hide(300);
+            $("#sec__8_type").css({ 'color': '#F0B6A1', 'font-weight': 500 });
+            var iconId = $(this).attr('id');
+            var $typeDiv = $('#sec__type');
+            var $typeImg = $typeDiv.find('img');
+
+            if ($typeImg.length === 0) {
+                $typeDiv.prepend('<img class="section__8_right_icon" src="img/sec8/' + iconId + '.svg" alt="">');
+            }
+        }
+    });
+
+    $('#s8_state label').click(function() {
+        $("#s8_terms").css({ 'opacity': 1 })
+        $("#s8_state").hide(300);
+        $("#sec__8_sost").css({ 'color': '#F0B6A1', 'font-weight': 500 });
+        var iconId = $(this).attr('id');
+        var $sostDiv = $('#sec__sost');
+        var $sostImg = $sostDiv.find('img');
+
+        if ($sostImg.length === 0) {
+            $sostDiv.prepend('<img class="section__8_right_icon" src="img/sec8/' + iconId + '.svg" alt="">');
+        }
+    });
+
+    $('#s8_terms label').click(function() {
+        $("#sec__8_form").css({ 'opacity': 1 })
+        $("#s8_terms").hide(300);
+        $("#sec__8_start").css({ 'color': '#F0B6A1', 'font-weight': 500 });
+        $('.section__8_h3_2').hide();
+        $('.section__8_h3').html('Ваши контакты')
+        var iconId = $(this).attr('id');
+        var $startDiv = $('#sec__start');
+        var $startImg = $startDiv.find('img');
+
+        if ($startImg.length === 0) {
+            $startDiv.prepend('<img class="section__8_right_icon" src="img/sec8/' + iconId + '.svg" alt="">');
+        }
+    });
+
+    $('.contact__button').click(function() {
+        $("#sec__8_cont").css({ 'color': '#F0B6A1', 'font-weight': 500 });
+    });
+});
+
+        //Модальное окно 3 с AJAX
+
+                $(document).ready(function() {
+            $('#contactForm').submit(function(e) {
+                e.preventDefault(); // Предотвращаем отправку формы по умолчанию
+
+                // Проверяем заполнение полей input
+                var name = $('input[name="name"]').val();
+                var phone = $('input[name="phone"]').val();
+                var email = $('input[name="email"]').val();
+                var message = $('textarea[name="message"]').val();
+                var typeProject = $('input[name="type_project"]:checked').val();
+                var statusProject = $('input[name="status_project"]:checked').val();
+                var startProject = $('input[name="start_project"]:checked').val();
+
+                console.log("typeProject:", typeProject);
+                console.log("statusProject:", statusProject);
+                console.log("startProject:", startProject);
+
+
+                if (name === '' || phone === '' || email === '' || message === '') {
+                    alert('Пожалуйста, заполните все поля формы.');
+                    return;
+                }
+
+                // Отправка данных на сервер с помощью AJAX-запроса
+                $.ajax({
+                    url: 'form.php', // Укажите здесь путь к вашему PHP-обработчику формы
+                    type: 'POST',
+                    data: {
+                        name: name,
+                        phone: phone,
+                        email: email,
+                        message: message,
+                        type_project: typeProject,
+                        status_project: statusProject,
+                        start_project: startProject
+                    },
+                    success: function(response) {
+                        // Обработка успешного ответа сервера
+                        $('#successModal').css('display', 'block');
+                        $("#sec__8_form").css({'opacity':0})
+                        $('.section__8_h3').html('Мы уже занимаемся Вашим запросом...')
+                        $('.section__8_h3_2').html('Мы уже занимаемся Вашим запросом...')
+                    },
+                    error: function(xhr, status, error) {
+                        // Обработка ошибки
+                        console.error(error);
+                    }
+                });
+            });
+
+            // Закрываем модальное окно при клике на кнопку "Закрыть" (крестик)
+            $('.close').click(function() {
+                $('#successModal').css('display', 'none');
+            });
+
+            // Закрываем модальное окно при клике вне его области
+            $(window).click(function(event) {
+                if (event.target.id === 'successModal') {
+                    $('#successModal').css('display', 'none');
+                }
+            });
+        });
+
+
+
+
+            //Маска номера
+
+            $('.art-stranger').mask('+7 (999) 999-99-99');
+
+            $.fn.setCursorPosition = function(pos) {
+            if ($(this).get(0).setSelectionRange) {
+                $(this).get(0).setSelectionRange(pos, pos);
+            } else if ($(this).get(0).createTextRange) {
+                var range = $(this).get(0).createTextRange();
+                range.collapse(true);
+                range.moveEnd('character', pos);
+                range.moveStart('character', pos);
+                range.select();
+            }
+            };
+
+
+            $('input[type="tel"]').click(function(){
+                $(this).setCursorPosition(4);  // set position number
+            });
+
+    </script>
+
+    <script type="text/javascript">
+        // Телеграм-чат
+        document.querySelector('.chat__trigger').addEventListener('click',e=>{
+
+        console.log('триггер');
+
+        new TelegaChat().open()
+
+        });
+    </script>
+
+</body>
+</html>
